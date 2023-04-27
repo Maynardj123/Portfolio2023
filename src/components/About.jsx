@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -39,7 +40,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3x1 leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I am pleased to say that I have recently obtained a Full Stack Development certification from the University of Texas at Austin.
           Throughout the program, I gained valuable knowledge and practical experience with the MERN stack,
@@ -56,4 +57,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about")
