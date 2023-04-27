@@ -18,9 +18,27 @@ const Hero = () => {
           As a junior Full Stack MERN web developer,<br className="sm:block hidden" /> I am eager to learn and grow while utilizing <br className="sm:block hidden" /> my skills in MongoDB, Express.js, React.js, <br className="sm:block hidden" /> Node.js, and more, to build dynamic <br className="sm:block hidden" /> web applications.
           </p>
         </div>
-        
+
       </div>
       <ComputersCanvas />
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        <a href="#about">
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <motion.dev 
+              animate={{
+                y: [0, 24, 0]
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop'
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              />
+          </div>
+        </a>
+      </div>
     </section>
   )
 }
