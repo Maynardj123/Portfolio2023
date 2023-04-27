@@ -8,13 +8,13 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    mysql,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
+    jquery,
+    bootstrap,
     meta,
     starbucks,
     tesla,
@@ -46,7 +46,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -54,7 +54,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Entreprenuer",
       icon: creator,
     },
   ];
@@ -81,8 +81,8 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "MySQL",
+      icon: mysql,
     },
     {
       name: "Tailwind CSS",
@@ -105,12 +105,12 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "jquery",
+      icon: jquery,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "bootstrap",
+      icon: bootstrap,
     },
   ];
   
