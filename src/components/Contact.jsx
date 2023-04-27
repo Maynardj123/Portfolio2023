@@ -6,6 +6,9 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+// ON0TCChPiuN6TXoTs
+// template_stu1wig
+// service_job3grr
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,9 +19,45 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleSubmit = (e) => {}
+    setForm({ ...form, [name]: value})
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      'service_job3grr', 
+      'template_stu1wig',
+      {
+        from_name: form.name,
+        to_name: 'Jacob',
+        from_email: form.email,
+        to_email: 'jacobanmaynard@gmail.com',
+        message: form.message,
+      },
+      'ON0TCChPiuN6TXoTs'
+      )
+      .then(() => {
+        setLoading(false);
+        alert('Thank you! I will be in touch as soon as possible.');
+
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        })
+      }, (error) => {
+        setLoading(false)
+
+        console.log(error)
+
+        alert('Something went wrong')
+      })
+  }
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
