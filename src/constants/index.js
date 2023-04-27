@@ -19,9 +19,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    findmyride,
+    employeetracker,
+    teamgenerator,
     threejs,
   } from "../assets";
   
@@ -198,58 +198,54 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Find My Ride",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A group project of a Web-based platform that allows users to search, save, and manage cars they're looking for, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "MySQL",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Nodejs",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: findmyride,
+      source_code_link: "https://github.com/kpeazzoni/find-my-ride",
     },
     {
-      name: "Job IT",
+      name: "Employee Track System",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A nodejs system that will allow you to show a database of employees, their pay, their boss, and career position",
       tags: [
         {
-          name: "react",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Nodejs",
           color: "green-text-gradient",
         },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: employeetracker,
+      source_code_link: "https://github.com/Maynardj123/Employee-Tracker",
     },
     {
-      name: "Trip Guide",
+      name: "Team Generator",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A nodejs system that will allow you to produce cards with information as name, career, and general information",
       tags: [
         {
-          name: "nextjs",
+          name: "Javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Nodejs",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +253,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: teamgenerator,
+      source_code_link: "https://github.com/Maynardj123/OOPChallenge",
     },
   ];
   
